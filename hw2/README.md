@@ -60,7 +60,7 @@ The source data from which to construct the tree lives in the `data/Tree.json` f
 
 Notice that the constructor of this class takes in two parameters: the name of the node as a string, and the name of the parent, also as a string.
 
-``` JS
+```JS
 constructor(nodeName, parentName) {
 
 	//String of Node Name
@@ -111,7 +111,7 @@ Our tree class will only need to have one attribute: a list (represented by an a
 
 Let's start by filling out the constructor of the Tree class, which takes in an array of JSON objects.
 
-``` JS
+```JS
 /**
  * Creates a Tree Object
  * parentNode, children, parentName, level, position
@@ -126,7 +126,7 @@ Add code that will create this list of `Node` objects based on the input. This i
 
 The next step is to complete the `buildTree()` function.
 
-``` JS
+```JS
 /**
  * Function that builds a tree from a list of nodes with parent refs
  */
