@@ -14,3 +14,7 @@ To receive updates and add newly released homeworks update your repository by cd
 ```
 git pull
 ```
+
+## Submitting Homeworks
+
+Please submit homeworks using the appropriate [canvas dropbox](https://utah.instructure.com/courses/448047).
