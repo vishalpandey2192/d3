@@ -22,5 +22,5 @@ function fetchJSONFile(path, callback) {
 fetchJSONFile('data/Tree.json', function(data) {
 	let tree = new Tree(data);
 	tree.buildTree();
-	tree.renderTree();
+	// tree.renderTree();
 });
