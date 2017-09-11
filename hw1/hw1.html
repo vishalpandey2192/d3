@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualization - HW1</title>
+     <style>
+        .lines {
+            stroke: black;
+        }
+        
+        .grey{
+        	fill: grey;
+        }
+
+        .no-fill{
+        	fill:none;
+        	stroke: black;
+          	}
+
+        .area1{
+        	stroke: grey;
+        	fill: #d6d6d6;
+        }
+
+        .area2{
+        	stroke: black;
+        	fill: grey;
+        }
+
+        .scatter-box{
+        	border:1px solid black
+        }
+
+        
+    </style>
+</head>
+<body>
+<h2>CS-5630 / CS-6630 Homework 1</h2>
+<h3>Vishal Pandey - vishal.pandey@utah.edu - U1126029</h3>
+<h5>Bar Charts</h5>
+
+<!-- ALL POINTS SCALED BY 10 TO MAKE POINTS VISIBLE  -->
+
+<svg width="500" height="200">
+	<g transform="translate(0,200) scale(1,-10)">
+		<rect class="grey" x="0" y="0" width="10" height="10"/>
+		<rect class="grey" x="10.5" y="0" width="10" height="8"/>
+		<rect class="grey" x="21" y="0" width="10" height="13"/>
+		<rect class="grey" x="31.5" y="0" width="10" height="9"/>
+		<rect class="grey" x="42" y="0" width="10" height="11"/>
+		<rect class="grey" x="52.5" y="0" width="10" height="14"/>
+		<rect class="grey" x="63" y="0" width="10" height="6"/>
+		<rect class="grey" x="73.5" y="0" width="10" height="4"/>
+		<rect class="grey" x="84" y="0" width="10" height="12"/>
+		<rect class="grey" x="94.5" y="0" width="10" height="7"/>
+		<rect class="grey" x="105" y="0" width="10" height="5"/>
+	</g>
+	<text x="50" y="50">X</text>
+	<g transform="translate(200,200) scale(1,-10)">
+		<rect class="grey" x="0" y="0" width="10" height="7.46"/>
+		<rect class="grey" x="10.5" y="0" width="10" height="6.77"/>
+		<rect class="grey" x="21" y="0" width="10" height="12.74"/>
+		<rect class="grey" x="31.5" y="0" width="10" height="7.11"/>
+		<rect class="grey" x="42" y="0" width="10" height="7.81"/>
+		<rect class="grey" x="52.5" y="0" width="10" height="8.84"/>
+		<rect class="grey" x="63" y="0" width="10" height="6.08"/>
+		<rect class="grey" x="73.5" y="0" width="10" height="5.39"/>
+		<rect class="grey" x="84" y="0" width="10" height="8.15"/>
+		<rect class="grey" x="94.5" y="0" width="10" height="6.42"/>
+		<rect class="grey" x="105" y="0" width="10" height="5.73"/>
+	</g>
+	<text x="250" y="50">Y</text>	
+</svg>
+
+<h5>Line Charts</h5>
+<svg width="500" height="200">
+<text x="50" y="50">X</text>
+<g transform="translate(0,200) scale(1,-1)">
+	<path class="no-fill" d="M 0 100 L 10 80 L 20 130 L 30 90 L 40 110 L 50 140 L 60 60 L 70 40 L 80 120 L 90 70 L 100 50 "/>
+</g>
+<text x="250" y="50">Y</text>
+<g transform="translate(200,200) scale(1,-1) ">
+	<line class="lines" x1="0" y1="74.6" x2="10" y2="67.7"/>
+	<line class="lines" x1="10" y1="67.7" x2="20" y2="127.4"/>
+	<line class="lines" x1="20" y1="127.4" x2="30" y2="71.1"/>
+	<line class="lines" x1="30" y1="71.1" x2="40" y2="78.2"/>
+	<line class="lines" x1="40" y1="78.1" x2="50" y2="88.4"/>
+	<line class="lines" x1="50" y1="88.4" x2="60" y2="60.8"/>
+	<line class="lines" x1="60" y1="60.8" x2="70" y2="53.9"/>
+	<line class="lines" x1="70" y1="53.9" x2="80" y2="81.5"/>
+	<line class="lines" x1="80" y1="81.5" x2="90" y2="64.2"/>
+	<line class="lines" x1="90" y1="64.2" x2="100" y2="57.3"/>
+</g>
+</svg>
+
+<h5>Area Charts</h5>
+<svg width="500" height="200">
+<text x="50" y="50">X</text>
+	<g transform="translate(0,200) scale(1,-1)">
+		<path class="area1" d="M 0 0 L 0 100 L 10 80 L 20 130 L 30 90 L 40 110 L 50 140 L 60 60 L 70 40 L 80 120 L 90 70 L 100 50 L 100 0 Z"/>
+	</g>
+	<text x="250" y="50">Y</text>
+	<g transform="translate(200,200) scale(1,-1) ">
+		<path class="area2" d="M 0 0 L 0 74.6 L 10 67.7 L 20 127.4 L 30 71.1 L 40 78.1 L 50 88.4 L 60 60.8 L 70 53.9 L 80 81.5 L 90 64.2 L 100 57.3 L 100 0 Z"/>
+	</g>
+</svg>
+
+
+<h5>Scatter Plot</h5>
+<svg class="scatter-box" width="200" height="200">
+<g transform="translate(0,200) scale(1,-1)">
+	<circle cx="100" cy="74.6" r="5"/>
+	<circle cx="80" cy="67.7" r="5"/>
+	<circle cx="130" cy="127.4" r="5"/>
+	<circle cx="90" cy="71.1" r="5"/>
+	<circle cx="110" cy="78.1" r="5"/>
+	<circle cx="140" cy="88.4" r="5"/>
+	<circle cx="60" cy="60.8" r="5"/>
+	<circle cx="40" cy="53.9" r="5"/>
+	<circle cx="120" cy="81.5" r="5"/>
+	<circle cx="70" cy="64.2" r="5"/>
+	<circle cx="50" cy="57.3" r="5"/>
+</g>
+</svg>
+</body>
+</html>
